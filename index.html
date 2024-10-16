@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Parallax Page</title>
+  <link rel="stylesheet" href="style.css">
+   <style>
+     body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    
+    .bg-image {
+      background-image: url('https://www.w3schools.com/w3images/parallax1.jpg');
+      height: 100vh;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+  
+    .header-text {
+      text-align: center;
+      position: relative;
+      top: 75%;
+      /* transform: translateY(-50%); */
+      color:white;
+      border-radius:20px;
+
+      box-sizing: content-box;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .navbar {
+      display: flex;
+       /* justify-content:center;  */
+      background-color: white;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: rgb(83, 82, 82);
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+   
+    .content {
+      padding: 60px;
+      background-color: white;
+      color: #555;
+      text-align: center;
+    }
+
+    .content h3 {
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .side1{
+  display: grid;
+  margin-left: 100px;
+}
+.item1{
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+.cont1{
+  display: flex;
+  gap: 40px;
+  
+}
+.side2{
+    color: #555;
+}
+.p3{
+  text-align: left;
+  margin-top: 10px;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 55px;
+  line-height: 30px;
+  font-style: normal;
+}
+.skills-section {
+      text-align: center;
+      padding: 50px;
+}
+
+.skills-section h3 {
+      margin-bottom: 20px;
+      font-size: 22px;
+}
+
+.skill {
+      margin: 20px 0;
+      text-align: left;
+      font-size: 18px;
+ }
+
+.bar-box {
+      width: 80%;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      margin: 10px auto;
+    }
+
+.bar {
+      height: 24px;
+      background-color: rgb(34, 32, 32);
+      text-align: right;
+      padding-right: 10px;
+      border-radius: 8px;
+      color: white;
+      line-height: 24px;
+}
+
+.icon {
+      margin-right: 8px;
+}
+    .stats-section {
+            background-color: #555;
+            color: white;
+            padding: 50px 0;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .stats-box {
+            font-size: 24px;
+            margin: 0 20px;
+        }
+
+        .stats-box p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .portfolio-banner {
+            position: relative;
+            text-align: center;
+            color: white;
+            background-color: #888;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .portfolio-banner h2 {
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+     
+        .my-work {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .my-work h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: rgb(138, 134, 134);
+        }
+        .my-work p{
+            color: #858282;
+        }
+        
+
+
+
+  </style> 
+  
+
+</head>
+<body>
+
+  
+  <div class="navbar">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+
+  
+  <div class="bg-image" id="home">
+    <div class="header-text">
+      MY WEBSITE LOGO
+    </div>
+  </div>
+
+
+  <div class="content" id="about">
+    <h3>ABOUT ME</h3>
+    <p><em>I love photography</em></p>
+    <p>
+        We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+
+    </p>
+  </div>
+  <div class="cont1">
+    <div class="side1">
+      <div class="item1">
+        <p>My Name</p>
+      </div>
+      <div class="item2">
+        <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" height="300px" width="400px">
+      </div>
+    </div>
+    <div class="side2">
+      <p class="p3" >Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    </div>
+
+
+  <div class="skills-section">
+    <h3>I'm really good at:</h3>
+
+    <div class="skill">
+      <span><i class="icon">📷</i> Photography</span>
+      <div class="bar-box">
+        <div class="bar" style="width: 90%;">90%</div>
+      </div>
+    </div>
+
+
+    <div class="skill">
+      <span><i class="icon">💻</i> Web Design</span>
+      <div class="bar-box">
+        <div class="bar" style="width: 85%;">85%</div>
+      </div>
+    </div>
+
+ 
+    <div class="skill">
+      <span><i class="icon">🖼️</i> Photoshop</span>
+      <div class="bar-box">
+        <div class="bar" style="width: 80%;">75%</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="stats-section">
+    <div class="stats-box">
+        <h3>14+</h3>
+        <p>Partners</p>
+    </div>
+    <div class="stats-box">
+        <h3>55+</h3>
+        <p>Projects Done</p>
+    </div>
+    <div class="stats-box">
+        <h3>89+</h3>
+        <p>Happy Clients</p>
+    </div>
+    <div class="stats-box">
+        <h3>150+</h3>
+        <p>Meetings</p>
+    </div>
+</div>
+
+
+<div class="portfolio-banner">
+    <h2>PORTFOLIO</h2>
+</div>
+
+<div class="my-work">
+    <h3>My Work</h3>
+    <p>Some of my recent projects are displayed below.</p>
+</div>
+
+
+
+
+</body>
+</html>
